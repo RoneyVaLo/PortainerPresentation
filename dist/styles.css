@@ -1,0 +1,121 @@
+/*? Sección 1 */
+
+.portainer-section {
+    color: #333333;
+    background-color: #2791d3;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.portainer-link {
+    text-decoration: none;
+    color: #00CED1;
+}
+
+.portainer-icon {
+    max-width: 100px;
+}
+
+.portainer-title {
+    color: #FFFFFF;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.portainer-description {
+    color: #FFFFFF;
+    font-style: italic;
+}
+
+/*? Sección 2 */
+
+.portainer-info-section {
+    color: #FFFFFF;
+}
+
+.section-title {
+    color: #4ABAFF;
+}
+
+.portainer-description-section {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/*? Sección 3 */
+
+.funcionality-section {
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.section-title {
+    color: #4ABAFF;
+}
+
+.subsection-title {
+    color: #00CED1;
+}
+
+.funcionality-description-section {
+    margin-top: 20px;
+}
+
+.funcionality-description-section h3 {
+    font-size: 1.5em;
+}
+
+.funcionality-description-section p {
+    line-height: 1.5;
+}
+
+/*? Sección 4 */
+
+.use-cases-section {
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.section-title {
+    color: #4ABAFF;
+}
+
+.subsection-title {
+    color: #00CED1;
+}
+
+.sub-section p {
+    line-height: 1.5;
+}
+
+
+/*? Sección 5 */
+.styled-image {
+    aspect-ratio: 4/3;
+    height: 400px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/*? Sección 6 */
+
+.conclusion-section {
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.section-title {
+    color: #4ABAFF;
+}
+
+.conclusion-description-section {
+    margin-top: 20px;
+    line-height: 1.5;
+}

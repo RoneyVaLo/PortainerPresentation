@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Portainer - CasaOS</title>
+	<link rel="icon" href="./examples/assets/icon.png" type="image/png">
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+	<link rel="stylesheet" href="./dist/styles.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<style>
+	.oculto {
+		display: none;
+	}
+
+	.icon {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		transition: box-shadow .3s;
+		animation: heartbeat 2s infinite;
+	}
+
+	.icon:hover {
+		cursor: pointer;
+	}
+
+	@keyframes heartbeat {
+		0% {
+			box-shadow: 0px 3px 4px 2px rgba(255, 255, 255, 0.9);
+		}
+
+		50% {
+			box-shadow: 0px 3px 4px 6px rgba(255, 255, 255, 0.9);
+		}
+
+		100% {
+			box-shadow: 0px 3px 4px 2px rgba(255, 255, 255, 0.9);
+		}
+	}
+</style>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section class="portainer-section" data-transition="convex" data-background-color="#2791d3">
+				<a href="#/1" class="portainer-link">
+					<img src="./examples/assets/icon.png" alt="Portainer icon" class="portainer-icon">
+				</a>
+				<h1 class="portainer-title">Portainer</h1>
+				<p class="portainer-description">
+					El software de gestión de contenedores más versátil
+				</p>
+			</section>
+
+			<!-- * ¿Qué es? -->
+
+			<section class="portainer-info-section" data-transition="convex"
+				data-background-gradient="linear-gradient(to bottom, #4ABAFF, #333333)">
+				<h2 class="section-title">¿Qué es?</h2>
+				<section class="portainer-description-section" data-transition="concave">
+					Portainer es una interfaz de usuario ligera diseñada para la gestión sencilla de entornos Docker
+				</section>
+
+				<section class="portainer-description-section" data-transition="concave">
+					Ofrece una solución fácil y accesible para administrar contenedores, imágenes, redes y volúmenes de
+					Docker
+				</section>
+				<section class="portainer-description-section" data-transition="concave">
+					Proporciona funcionalidades clave, como implementación de contenedores, solución de
+					problemas y seguridad de aplicaciones en entornos basados en Docker
+				</section>
+				<section class="portainer-description-section" data-transition="concave">
+					Es reconocido por su simplicidad y facilidad de uso
+				</section>
+				<section class="portainer-description-section" data-transition="concave">
+					Con una interfaz de usuario amigable, permite realizar tareas de manera eficiente.
+				</section>
+			</section>
+
+			<!-- * ¿Cómo Funciona? -->
+
+			<section class="funcionality-section" data-transition="convex"
+				data-background-gradient="linear-gradient(to right, #008080, #1E90FF)">
+				<section class="zoom-section" data-transition="zoom">
+					<h2 class="section-title">Funcionalidad</h2>
+				</section>
+
+				<section class="funcionality-description-section" data-transition="convex">
+					<h3 class="subsection-title">Interfaz Web Intuitiva</h3>
+					<p>
+						Proporciona una interfaz gráfica fácil de usar, accesible a través de un navegador web
+					</p>
+				</section>
+
+				<section class="funcionality-description-section" data-transition="convex">
+					<h3 class="subsection-title">Ejecución como Contenedor</h3>
+					<p>
+						Se ejecuta como un contenedor Docker independiente, lo que significa que puede implementarse
+						fácilmente en cualquier entorno con Docker instalado
+					</p>
+				</section>
+
+				<section class="funcionality-description-section" data-transition="convex">
+					<h3 class="subsection-title">Administración de Contenedores</h3>
+					<p>
+						Permite desplegar, detener, reiniciar y eliminar contenedores de manera sencilla a través de la
+						interfaz web
+					</p>
+				</section>
+
+				<section class="funcionality-description-section" data-transition="convex">
+					<h3 class="subsection-title">Gestión de Imágenes y Volúmenes</h3>
+					<p>
+						Facilita la administración de imágenes Docker y volúmenes, permitiendo la creación y eliminación
+						de estos recursos
+					</p>
+				</section>
+
+				<section class="funcionality-description-section" data-transition="convex">
+					<h3 class="subsection-title">Monitoreo y Estadísticas</h3>
+					<p>
+						Proporciona información detallada sobre el rendimiento de los contenedores, incluyendo
+						estadísticas en tiempo real y registros
+					</p>
+				</section>
+
+				<section class="funcionality-description-section" data-transition="convex">
+					<h3 class="subsection-title">Seguridad</h3>
+					<p>
+						Ofrece funciones de seguridad, como la gestión de usuarios y roles, para controlar el acceso a
+						las funciones administrativas
+					</p>
+				</section>
+
+				<section class="funcionality-description-section" data-transition="convex">
+					<h3 class="subsection-title">Compatibilidad con Múltiples Entornos</h3>
+					<p>
+						Es compatible con entornos Docker locales, en la nube o incluso distribuidos
+					</p>
+				</section>
+			</section>
+
+
+			<!-- * Casos de Uso -->
+
+			<section class="use-cases-section" data-transition="convex"
+				data-background-gradient="linear-gradient(to bottom right, #333333, #4ABAFF)">
+				<section class="sub-section" data-transition="convex">
+					<h2 class="section-title">Casos de Uso</h2>
+				</section>
+
+				<section class="sub-section" data-transition="zoom-in convex-out">
+					<h3 class="subsection-title">Gestión Visual de Contenedores</h3>
+					<p>
+						Ofrece una interfaz gráfica intuitiva para gestionar contenedores Docker. Facilitando la
+						administración visual de entornos de contenedores
+					</p>
+				</section>
+
+				<section class="sub-section" data-transition="zoom-in convex-out">
+					<h3 class="subsection-title">Alternativa a Docker Desktop</h3>
+					<p>
+						Es utilizado como una alternativa a Docker Desktop, brindando una
+						opción más accesible y visual
+					</p>
+				</section>
+
+				<section class="sub-section" data-transition="zoom-in convex-out">
+					<h3 class="subsection-title">Monitorización y Administración de Docker</h3>
+					<p>
+						Se utiliza para monitorear y administrar entornos Docker de manera eficiente.
+						Proporciona información detallada sobre el rendimiento de los contenedores, facilitando la
+						detección y resolución de problemas
+					</p>
+				</section>
+
+				<section class="sub-section" data-transition="zoom-in convex-out">
+					<h3 class="subsection-title">Gestión de Contenedores en Raspberry Pi</h3>
+					<p>
+						En el contexto de Raspberry Pi, Portainer se implementa para gestionar contenedores en estos
+						dispositivos. Permite administrar aplicaciones Docker de manera fácil y visual en entornos de
+						baja potencia como Raspberry Pi
+					</p>
+				</section>
+
+				<section class="sub-section" data-transition="zoom-in convex-out">
+					<h3 class="subsection-title">Uso en Empresas y Grandes Organizaciones</h3>
+					<p>
+						Se ha utilizado en casos reales por grandes empresas como parte de sus estrategias de
+						contenerización.
+					</p>
+				</section>
+			</section>
+
+
+			<!-- * Instalación -->
+			<section class="funcionality-section" data-transition="convex"
+				data-background-gradient="linear-gradient(to right, #008080, #1E90FF)">
+				<section class="zoom-section" data-transition="zoom">
+					<h2 class="section-title">Instalación</h2>
+				</section>
+
+				<section class="funcionality-description-section" data-transition="convex">
+					<h3 class="subsection-title">Paso #1</h3>
+					<p>
+					<p>
+						Accede a la interfaz de CasaOS a través de su dirección IP en tu navegador. Luego ingresa a la
+						App Store.
+					</p>
+					<img src="./examples/assets/CasaOS.png" alt="Home CasaOS" class="styled-image">
+					</p>
+				</section>
+
+				<section class="funcionality-description-section" data-transition="convex">
+					<h3 class="subsection-title">Paso #2</h3>
+					<div>
+						<p>
+							Busca "Portainer" en la lista de complementos disponibles e instalalo
+						</p>
+						<img src="./examples/assets/AppStore.jpg" alt="App Store CasaOS" class="styled-image"
+							style="height: 420px; aspect-ratio: 3/2;">
+					</div>
+				</section>
+
+				<section class="funcionality-description-section" data-transition="convex">
+					<h3 class="subsection-title">Alternativa</h3>
+					<p>Existe también la posibilidad de instalarlo manualmente mediante comandos</p>
+					<pre>
+						<code data-trim data-noescape>
+							# docker volume create portainer data
+							# docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer:last
+						</code>
+					</pre>
+				</section>
+
+				<section class="funcionality-description-section" data-transition="convex">
+					<div>
+						<p>Luego de esto, así se ve el Inicio de CasaOS una vez instalado</p>
+						<img src="./examples/assets/PortainerInstall.jpg" alt="Home CasaOS" class="styled-image"
+							style="height: 400px; aspect-ratio: 4/2;">
+					</div>
+				</section>
+
+				<section class="funcionality-description-section" data-transition="convex">
+					<div>
+						<p>Finalmente ingresamos a Portainer, creamos un usuario y una contraseña</p>
+						<img src="./examples/assets/HomePortainer.jpg" alt="App Store CasaOS" class="styled-image"
+							style="height: 400px; aspect-ratio: 4/2;">
+					</div>
+				</section>
+
+			</section>
+
+
+			<!-- * Conclusión -->
+
+			<section class="conclusion-section" data-transition="convex"
+				data-background-gradient="linear-gradient(to bottom left, #008080, #1E90FF)">
+				<h2 id="main-title" class="hidden">Conclusión</h2>
+
+				<section>
+					<h2 class="section-title">Conclusión</h2>
+				</section>
+
+				<section class="conclusion-description-section" data-transition="concave-in fade-out">
+					Se destaca como una herramienta integral para la gestión de contenedores Docker,
+					ofreciendo una interfaz gráfica intuitiva y accesible. Permite desplegar, monitorear y gestionar
+					entornos Docker de manera eficiente.
+				</section>
+
+				<section class="conclusion-description-section" data-transition="convex-in fade-out">
+					En comparación con Docker Desktop, Portainer emerge como una alternativa visual, brindando una
+					interfaz gráfica para aquellos que prefieren evitar los comandos de línea.
+				</section>
+
+				<section class="conclusion-description-section" data-transition="convex-in fade-out">
+					La herramienta se posiciona como clave en el ecosistema de contenerización. Su ejecución como
+					contenedor Docker facilita su implementación, y al ser open-source, atrae a la comunidad.
+				</section>
+
+				<section class="conclusion-description-section" data-transition="convex-in fade-out">
+					En resumen, Portainer simplifica la gestión de Docker para usuarios de todos los niveles, desde
+					desarrolladores individuales hasta grandes empresas, ofreciendo una solución eficaz y amigable.
+				</section>
+			</section>
+
+
+
+			<section class="portainer-section" data-transition="convex" data-background-color="#2791d3">
+				<a href="#/5" class="portainer-link">
+					<img src="./examples/assets/icon.png" alt="Portainer icon" class="portainer-icon">
+				</a>
+				<h1 class="portainer-title">Portainer</h1>
+				<p class="portainer-description">
+					El software de gestión de contenedores más versátil
+				</p>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+<script>
+
+	Reveal.addEventListener('ready', function (event) {
+		// Obtén el índice de la diapositiva actual
+		let currentSlideIndex = Reveal.getIndices().v;
+
+		// Si la diapositiva actual tiene el segundo h2, muestra el primero
+		if (currentSlideIndex === 1) {
+			document.getElementById('main-title').style.display = 'block';
+		}
+	});
+
+	// Escucha el evento de cambio de diapositiva
+	Reveal.addEventListener('slidechanged', function (event) {
+		// Obtén el índice de la nueva diapositiva
+		let currentSlideIndex = event.indexv;
+
+		// Si la nueva diapositiva tiene el segundo h2, muestra el primero
+		if (currentSlideIndex === 0) {
+			// Oculta el primer h2 en otras diapositivas
+			document.getElementById('main-title').style.display = 'none';
+		} else {
+			document.getElementById('main-title').style.display = 'block';
+		}
+	});
+</script>
+
+</html>
